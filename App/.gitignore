@@ -69,3 +69,4 @@ package-lock.json
 .flowconfig
 .prettierrc.js
 .watchmanconfig
+yarn.lock
