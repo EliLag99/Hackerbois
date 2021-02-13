@@ -1,0 +1,46 @@
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+# MAC OS .DS_Store files
+**.DS_Store
+
+# Visual Studio Code files
+*.vscode
+
+# GNU ARM Compiler
+
+
+# Private Keys
+*key.json*
+*.pem
+*.p
