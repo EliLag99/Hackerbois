@@ -159,17 +159,24 @@ return(
 <Text style={styles.title}>Carl Hikardi</Text>
 <Text style={styles.title}>MEng Electrical and Electronics</Text>
 <Text style={styles.title}>University of Southampton</Text>
-    <View style={styles.bubble}>
+    <View style={styles.modbubble}>
         <Text style={styles.bubtext}>Compter Engineering</Text>
       </View>
-    <View style={styles.bubble}>
+    <View style={styles.modbubble}>
         <Text style={styles.bubtext}>Foundation of Machine Learning</Text>
       </View>
-      <View style={styles.bubble}>
+      <View style={styles.modbubble}>
         <Text style={styles.bubtext}>Advanced Computer Architecture</Text>
       </View>
-      
-
+      <View style={styles.langbubble}>
+        <Text style={styles.bubtext}>Chinese</Text>
+      </View>
+      <View style={styles.langbubble}>
+        <Text style={styles.bubtext}>English</Text>
+      </View>
+      <TouchableOpacity style={styles.loginBtn}>
+          <Text style={styles.loginText} onPress={() => navigation.navigate('Login')}>Sign Out</Text>
+      </TouchableOpacity>
 </View>
 )
 }
@@ -202,9 +209,7 @@ const styles = StyleSheet.create({
   backgroundColor: "lightskyblue",
     alignItems: "center",
     justifyContent: "center",
-    flex:0.2,
-    height:635,
-    width:333,
+    flex:1,
   },
 
   image: {
@@ -277,7 +282,7 @@ const styles = StyleSheet.create({
   marginBottom:5
   },
 
-  bubble:{
+  modbubble:{
   marginTop:10,
   width: 300,
   height: 30,
@@ -287,9 +292,18 @@ const styles = StyleSheet.create({
   },
   bubtext:{
   alignSelf: 'center',
+  justifyContent: "center",
   fontWeight: 'bold',
   color: 'white',
   fontSize: 15,
+  },
+  langbubble:{
+  marginTop:10,
+  width: 300,
+  height: 30,
+  justifyContent: "left",
+  borderRadius: 60 / 2,
+  backgroundColor: 'lightgreen',
   },
   }
 );
