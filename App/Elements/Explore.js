@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Image,
   StatusBar,
-  StyleSheet,
   Text,
   View,
   SafeAreaView,
