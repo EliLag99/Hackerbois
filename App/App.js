@@ -7,6 +7,7 @@ import SignUp from './Elements/Signup'
 import Details from './Elements/Details'
 import Details2 from './Elements/Details2'
 import Bio from './Elements/Bio'
+import StudyGroup from './Elements/Studygroup'
 import Explore from './Elements/Explore'
 
 const Stack = createStackNavigator();
@@ -22,6 +23,7 @@ function App() {
         <Stack.Screen name="Details" component={Details} />
         <Stack.Screen name="Details2" component={Details2} />
         <Stack.Screen name="Bio" component={Bio} />
+        <Stack.Screen name="StudyGroup" component={StudyGroup} />
       </Stack.Navigator>
     </NavigationContainer>
   );

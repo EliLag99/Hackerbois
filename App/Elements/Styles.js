@@ -74,7 +74,18 @@ const Styles = StyleSheet.create({
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 40,
+    marginTop: 20,
+    backgroundColor: 'deepskyblue',
+  },
+
+  generalBtn: {
+    width: '80%',
+    borderRadius: 12.5,
+    height: 25,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10, 
+    marginBottom: 10,
     backgroundColor: 'deepskyblue',
   },
 
@@ -88,16 +99,17 @@ const Styles = StyleSheet.create({
     marginBottom: 5,
   },
 
-  modbubble: {
+  captionBubble:{
     marginTop: 10,
     width: 300,
-    height: 30,
-    justifyContent: 'left',
+    height: 25,
+    justifyContent: 'center',
     borderRadius: 60 / 2,
-    backgroundColor: 'orange',
+    backgroundColor: '#522719',
   },
 
-  bubtext: {
+    
+  captionText: {
     alignSelf: 'center',
     justifyContent: 'center',
     fontWeight: 'bold',
@@ -105,13 +117,9 @@ const Styles = StyleSheet.create({
     fontSize: 15,
   },
 
-  langbubble: {
-    marginTop: 10,
-    width: 300,
-    height: 30,
-    justifyContent: 'left',
-    borderRadius: 60 / 2,
-    backgroundColor: 'lightgreen',
+  link: {
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
   },
 
   //FOR EXPLORE

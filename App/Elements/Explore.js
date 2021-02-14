@@ -56,16 +56,16 @@ const transitionRef = React.createRef();
 const Card = ({ card }) => {
   return (
     <View style={Styles.card}>
-      <Image source={{ uri: card.image }} style={Styles.cardImage} />
+      <Image source={{ uri: card.Image }} style={Styles.cardImage} />
     </View>
   );
 };
 
 const CardDetails = ({ index }) => (
-  <View key={Data[index].id} style={{ alignItems: 'center' }}>
-    <Text style={[Styles.text, Styles.price]}>{Data[index].price}</Text>
+  <View key={Data[index].ID} style={{ alignItems: 'center' }}>
+    <Text style={[Styles.text, Styles.price]}>{Data[index].Module}</Text>
     <Text style={[Styles.text, Styles.heading]} numberOfLines={2}>
-      {Data[index].name}
+      {Data[index].Language}
     </Text>
   </View>
 );

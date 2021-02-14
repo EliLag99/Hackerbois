@@ -25,7 +25,8 @@ const SignUp = ({ navigation }) => {
           onChangeText={(email) => setEmail(email)}
         />
       </View>
-<View style={Styles.inputView}>
+
+      <View style={Styles.inputView}>
         <TextInput
           style={Styles.TextInput}
           placeholder="Username."
@@ -33,6 +34,7 @@ const SignUp = ({ navigation }) => {
           onChangeText={(username) => setusername(username)}
         />
       </View>
+
       <View style={Styles.inputView}>
         <TextInput
           style={Styles.TextInput}
@@ -40,6 +42,15 @@ const SignUp = ({ navigation }) => {
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
+        />
+      </View>
+
+      <View style={Styles.inputView}>
+        <TextInput
+          style={Styles.TextInput}
+          placeholder="Confirm Password"
+          placeholderTextColor="#003f5c"
+          secureTextEntry={true}
         />
       </View>
   

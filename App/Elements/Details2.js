@@ -13,6 +13,7 @@ import Styles from './Styles.js'
 const Details2 = ({ navigation }) => {
   const [uni, setuni] = useState("");
   const [course, setcourse] = useState("");
+  const [yos, setYos] = useState("");
   return (
    <View style={Styles.container}>
     <StatusBar style="auto" />
@@ -24,12 +25,22 @@ const Details2 = ({ navigation }) => {
           onChangeText={(uni) => setuni(uni)}
         />
       </View>
+
       <View style={Styles.inputView}>
         <TextInput
           style={Styles.TextInput}
           placeholder="Course name."
           placeholderTextColor="#003f5c"
           onChangeText={(course) => setcourse(course)}
+        />
+      </View>
+
+      <View style={Styles.inputView}>
+        <TextInput
+          style={Styles.TextInput}
+          placeholder="Year of Study"
+          placeholderTextColor="#003f5c"
+          onChangeText={(yos) => setYos(yos)}
         />
       </View>
   
@@ -40,7 +51,9 @@ const Details2 = ({ navigation }) => {
           }
           }>Finish</Text>
       </TouchableOpacity>
+
     </View>
+
   );
 };
 
