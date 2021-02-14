@@ -47,7 +47,7 @@ function login({ navigation }) {
         <Text style={styles.forgot_button} onPress={() => navigation.navigate('Create1')}>Sign up</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText}>LOGIN</Text>
+          <Text style={styles.loginText} onPress={() => navigation.navigate('Bio')}>LOGIN</Text>
       </TouchableOpacity>
     </View>
   );
@@ -151,16 +151,40 @@ function Create2({ navigation }) {
   );
 }
 
+function Bio({navigation}){
+  
+return(
+<View style={styles.container2}>
+<Image style={styles.image2} source={require("./assets/face.png")} />
+<Text style={styles.title}>Carl Hikardi</Text>
+<Text style={styles.title}>MEng Electrical and Electronics</Text>
+<Text style={styles.title}>University of Southampton</Text>
+    <View style={styles.bubble}>
+        <Text style={styles.bubtext}>Compter Engineering</Text>
+      </View>
+    <View style={styles.bubble}>
+        <Text style={styles.bubtext}>Foundation of Machine Learning</Text>
+      </View>
+      <View style={styles.bubble}>
+        <Text style={styles.bubtext}>Advanced Computer Architecture</Text>
+      </View>
+      
+
+</View>
+)
+}
+
 const Stack = createStackNavigator();
 
 function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="Bio">
         <Stack.Screen name="Login" component={login} />
         <Stack.Screen name="Create1" component={Create1} />
         <Stack.Screen name="Create2" component={Create2} />
+        <Stack.Screen name="Bio" component={Bio} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -174,11 +198,28 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
+  container2:{
+  backgroundColor: "lightskyblue",
+    alignItems: "center",
+    justifyContent: "center",
+    flex:0.2,
+    height:635,
+    width:333,
+  },
+
   image: {
     marginBottom: 40,
     height: 200,
     width: 200,
     resizeMode: 'contain'
+  },
+
+   image2: {
+    height: 75,
+    width: 75,
+    resizeMode: 'contain',
+    justifyContent:"flex-start"
+
   },
 
   inputView: {
@@ -231,6 +272,26 @@ const styles = StyleSheet.create({
   justifyContent: 'center',
   },
   
-});
+  title:{
+  marginTop:10,
+  marginBottom:5
+  },
+
+  bubble:{
+  marginTop:10,
+  width: 300,
+  height: 30,
+  justifyContent: "left",
+  borderRadius: 60 / 2,
+  backgroundColor: 'orange',
+  },
+  bubtext:{
+  alignSelf: 'center',
+  fontWeight: 'bold',
+  color: 'white',
+  fontSize: 15,
+  },
+  }
+);
 
 export default App;
