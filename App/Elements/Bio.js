@@ -41,6 +41,9 @@ const Bio = ({navigation}) => {
       <TouchableOpacity style={styles.loginBtn}>
           <Text style={styles.loginText} onPress={() => navigation.navigate('Login')}>Sign Out</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.loginBtn}>
+          <Text style={styles.loginText} onPress={() => navigation.navigate('Explore')}>Explore Groups</Text>
+      </TouchableOpacity>
 </View>)
 };
 

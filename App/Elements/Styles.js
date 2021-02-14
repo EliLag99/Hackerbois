@@ -1,51 +1,52 @@
-import {
-  StyleSheet
-} from "react-native";
+import { StyleSheet } from 'react-native';
 
-export default Styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "lightskyblue",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: 'lightskyblue',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
-  container2:{
-  backgroundColor: "lightskyblue",
-    alignItems: "center",
-    justifyContent: "center",
-    flex:1,
+  container2: {
+    flex: 1,
+    backgroundColor: 'lightskyblue',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  containerExplore: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
   },
 
   image: {
     marginBottom: 40,
     height: 200,
     width: 200,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
   },
 
-   image2: {
+  image2: {
     height: 75,
     width: 75,
     resizeMode: 'contain',
-    justifyContent:"flex-start"
-
+    justifyContent: 'flex-start',
   },
 
   inputView: {
-    backgroundColor: "lightcyan",
+    backgroundColor: 'lightcyan',
     borderRadius: 30,
-    width: "70%",
+    width: '70%',
     height: 45,
     marginBottom: 20,
 
-    alignItems: "center",
+    alignItems: 'center',
   },
 
-   inputView2: {
-    backgroundColor: "lightcyan",
+  inputView2: {
+    backgroundColor: 'lightcyan',
     borderRadius: 30,
-    width: "20%",
+    width: '20%',
     height: 45,
     marginBottom: 20,
   },
@@ -56,10 +57,10 @@ export default Styles = StyleSheet.create({
     padding: 10,
     marginLeft: 20,
   },
-  
+
   TextInput2: {
     height: 50,
-  textAlign:'center',
+    textAlign: 'center',
   },
 
   forgot_button: {
@@ -68,47 +69,104 @@ export default Styles = StyleSheet.create({
   },
 
   loginBtn: {
-    width: "80%",
+    width: '80%',
     borderRadius: 25,
     height: 50,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 40,
-    backgroundColor: "deepskyblue",
+    backgroundColor: 'deepskyblue',
   },
 
-  row:{
-  flexDirection: 'row',
-  justifyContent: 'center',
-  },
-  
-  title:{
-  marginTop:10,
-  marginBottom:5
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
 
-  modbubble:{
-  marginTop:10,
-  width: 300,
-  height: 30,
-  justifyContent: "left",
-  borderRadius: 60 / 2,
-  backgroundColor: 'orange',
+  title: {
+    marginTop: 10,
+    marginBottom: 5,
   },
-  bubtext:{
-  alignSelf: 'center',
-  justifyContent: "center",
-  fontWeight: 'bold',
-  color: 'white',
-  fontSize: 15,
+
+  modbubble: {
+    marginTop: 10,
+    width: 300,
+    height: 30,
+    justifyContent: 'left',
+    borderRadius: 60 / 2,
+    backgroundColor: 'orange',
   },
-  langbubble:{
-  marginTop:10,
-  width: 300,
-  height: 30,
-  justifyContent: "left",
-  borderRadius: 60 / 2,
-  backgroundColor: 'lightgreen',
+
+  bubtext: {
+    alignSelf: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    color: 'white',
+    fontSize: 15,
   },
-  }
-);
+
+  langbubble: {
+    marginTop: 10,
+    width: 300,
+    height: 30,
+    justifyContent: 'left',
+    borderRadius: 60 / 2,
+    backgroundColor: 'lightgreen',
+  },
+
+  //FOR EXPLORE
+  swiperContainer: {
+    flex: 0.1,
+  },
+
+  bottomContainer: {
+    flex: 0.9,
+    justifyContent: 'space-evenly',
+  },
+
+  bottomContainerMeta: {
+    alignContent: 'flex-end',
+    alignItems: 'center',
+  },
+
+  bottomContainerButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+
+  cardImage: {
+    width: 160,
+    flex: 1,
+    resizeMode: 'contain',
+  },
+
+  card: {
+    flex: 0.45,
+    borderRadius: 8,
+    shadowRadius: 25,
+    shadowColor: '#000000',
+    shadowOpacity: 0.08,
+    shadowOffset: { width: 0, height: 0 },
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+  },
+
+  text: {
+    fontFamily: 'Courier',
+    textAlign: 'center',
+    fontSize: 50,
+    backgroundColor: 'transparent',
+  },
+
+  done: {
+    textAlign: 'center',
+    fontSize: 30,
+    color: '#FFFFFF',
+    backgroundColor: 'transparent',
+  },
+
+  heading: { fontSize: 24, color: '#777777' },
+});
+
+export default Styles;

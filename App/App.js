@@ -13,10 +13,12 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import Login from './Elements/Login.js'
+import Login from './Elements/Login'
 import SignUp from './Elements/Signup'
 import Details from './Elements/Details'
+import Details2 from './Elements/Details2'
 import Bio from './Elements/Bio'
+import Explore from './Elements/Explore'
 
 const Stack = createStackNavigator();
 
@@ -25,9 +27,11 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Explore" component={Explore} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Details2" component={Details2} />
         <Stack.Screen name="Bio" component={Bio} />
       </Stack.Navigator>
     </NavigationContainer>
