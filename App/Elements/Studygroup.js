@@ -26,11 +26,25 @@ const StudyGroup = ({route, navigation}) => {
       Description: "N/A",
     }
   }
+
+  const members = group.Members.map(function(item){
+      return <li> {item} </li>;
+  })
+
   return(
   <View style={styles.containerTopAlign}>
 
     <Text style={styles.title}>{group.Name}</Text>
+
+    <View style={styles.captionBubble}>
+      <Text style={styles.captionText}>Description</Text>
+    </View>
     <Text style={styles.Text}>{group.Description}</Text>
+
+    <View style={styles.captionBubble}>
+      <Text style={styles.captionText}>Members</Text>
+    </View>
+      <ul> {members} </ul>
     
   </View>)
 };

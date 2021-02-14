@@ -105,6 +105,9 @@ const Styles = StyleSheet.create({
   title: {
     marginTop: 10,
     marginBottom: 5,
+    fontSize: 20,
+    fontWidth: 'bold',
+    color: 'red',
   },
 
   captionBubble:{
@@ -128,6 +131,10 @@ const Styles = StyleSheet.create({
   link: {
     fontWeight: 'bold',
     textDecorationLine: 'underline',
+  },
+
+  ul: {
+    alignContent: 'left'
   },
 
   //FOR EXPLORE

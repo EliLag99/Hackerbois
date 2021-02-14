@@ -15,9 +15,9 @@ const Bio = ({navigation}) => {
   <View style={styles.container2}>
 
     <Image style={styles.image2} source={require("../assets/face.png")} />
-    <Text style={styles.title}>Sean Koh</Text>
-    <Text style={styles.title}>MEng Electrical and Electronic Engineering</Text>
-    <Text style={styles.title}>University of Southampton</Text>
+    <h1>Sean Koh</h1>
+    <h4>MEng Electrical and Electronic Engineering</h4>
+    <h4>University of Southampton</h4>
 
     <View style={styles.captionBubble}>
       <Text style={styles.captionText}>Modules</Text>
