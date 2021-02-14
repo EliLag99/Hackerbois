@@ -14,6 +14,14 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  containerTopAlign: {
+    flex: 1,
+    backgroundColor: 'lightskyblue',
+    alignItems: 'center',
+    justifyContent: 'top',
+  },
+
   containerExplore: {
     flex: 1,
     backgroundColor: '#FFFFFF',

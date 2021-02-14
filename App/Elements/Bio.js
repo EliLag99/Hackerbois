@@ -39,11 +39,11 @@ const Bio = ({navigation}) => {
       <Text style={styles.link} onPress={() => navigation.navigate('StudyGroup', {id: 2})}>Lawful Activities</Text>
 
     <TouchableOpacity style={styles.generalBtn}>
-      <Text style={styles.loginText} onPress={() => navigation.navigate('Login')}>Sign Out</Text>
+      <Text style={styles.loginText} onPress={() => navigation.navigate('Explore')}>Explore Groups</Text>
     </TouchableOpacity>
 
     <TouchableOpacity style={styles.generalBtn}>
-      <Text style={styles.loginText} onPress={() => navigation.navigate('Explore')}>Explore Groups</Text>
+      <Text style={styles.loginText} onPress={() => navigation.navigate('Login')}>Sign Out</Text>
     </TouchableOpacity>
 
   </View>)

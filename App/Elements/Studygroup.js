@@ -27,7 +27,7 @@ const StudyGroup = ({route, navigation}) => {
     }
   }
   return(
-  <View style={styles.container2}>
+  <View style={styles.containerTopAlign}>
 
     <Text style={styles.title}>{group.Name}</Text>
     <Text style={styles.Text}>{group.Description}</Text>
