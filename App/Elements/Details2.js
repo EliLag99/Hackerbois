@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Constants from 'expo-constants';
 import { StatusBar } from "expo-status-bar";
 import {
   Text,
   View,
-  Image,
   TextInput,
-  Button,
   TouchableOpacity,
 } from "react-native";
 

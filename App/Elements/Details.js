@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Constants from 'expo-constants';
 import { StatusBar } from "expo-status-bar";
 import {
   Text,
   View,
-  Image,
   TextInput,
-  Button,
   TouchableOpacity,
 } from "react-native";
 
@@ -66,11 +61,7 @@ const Details = ({ navigation }) => {
       </View>
       </View>
       <TouchableOpacity style={styles.loginBtn}>
-        <Text style={styles.loginText}onPress={function() 
-          {   
-            navigation.navigate('Details2')
-          }
-          }>Next</Text>
+        <Text style={styles.loginText}onPress={() => navigation.navigate('Explore')}>Next</Text>
       </TouchableOpacity>
     </View>
   );
